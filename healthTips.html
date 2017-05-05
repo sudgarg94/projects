@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <title>Home Page</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="./images/favicon.ico">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <!--<link rel="stylesheet" href="mycssfile.css">-->
+	  
+	  <style>
+		body{
+			padding-top:40px;
+			background: url("./images/bg.png");
+		}
+		.dropdown-menu{
+			background-color:#D3D3D3;
+		}
+		
+		.navbar-inverse .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+			background-color: #6495ED;
+			color: #000000;
+		}
+		
+		.btn{
+			margin-left:10px;
+		}
+		.carousel-inner .item img {
+  
+			height:450px;
+		}
+		.carousel-caption{
+			font-weight:bold;
+			font-style:italic;
+		}
+		
+		.jumbotron{
+			background-color:#E0FFFF;
+			background: url("./images/jumbo9.jpg");
+			color:#fff;
+			font-weight:bold;
+			font-size:16px;
+		}
+		
+		.jumbotron.achievements{
+			padding-top:5px;
+			padding-bottom:10px;
+			font-weight:normal;
+			color:#000000;
+		}
+		
+		.jumbotron.achievements h3, .jumbotron.achievements small{
+			color:#fff;
+			font-weight:bold;
+		}
+		
+		.section blockquote{
+			background: url("./images/test.jpg");
+			background-color:#E0FFFF;
+			font-size:18px;
+			font-weight:bold;
+			color:#fff;
+		
+		}
+		
+		.section blockquote small{
+			padding-top:15px;
+			color:#fff;
+		
+		}
+		
+		ul li a {
+		color:#fff;}
+		
+		blockquote {
+		height:300px;
+		}
+		
+		.carousel-caption a {
+			color:#fff;
+		}
+		
+		.carousel-inner img {
+			
+			height: 500px;
+		}
+		
+		.footer{
+			background-color:#333333;
+			padding:20px,0;
+			color:#fff;
+			padding-bottom:20px;
+		
+		}
+		.footer img{
+			padding-top:20px;
+		}
+		.footer ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.footer ul li a{
+			color:#fff;
+			font-size:15px
+		}
+
+	  </style>
+	  
+</head>
+
+
+<body>
+
+<!-----------------------------NAVBAR SECTION BELOW---------------------->
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class = "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">LiveSmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+			<!-- <a href="" class="btn btn-info navbar-btn navbar-right">Create Account</a>
+			<a href="" class="btn btn-info navbar-btn navbar-right">Sign In</a> -->
+			
+				<ul class="nav navbar-nav">
+								<!--<li><a href="#">Home</a></li>-->
+								<ul class="nav navbar-nav">
+								<li><a href="index.html#aboutus">About Us</a>
+								<li><a href="index.html#services">Services</a>
+								<li><a href="index.html#achievements">Achievements</a>
+								<li><a href="feedback.html">Feedback</a>
+								</ul>
+					
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Doctors
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindDoctor.html">Find A Doctor</a></li>
+								<li><form action="requestappt.php" method=post><button type="submit" class="btn">Book Appointments</button></a></form></li>
+								
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Chemists
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindStores.html">Find Stores</a></li>
+								<li><a href="FindMedicine.html">Medicines</a></li>
+							</ul>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			
+
+		</div>
+	</nav>
+	
+<!-----------------------------COMPANY BANNER SECTION BELOW---------------------->	
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Living Healthy</h1>
+			<br>
+			<small>Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.</small><br><br>
+			<div class="btn-group">
+				<a href="menshealth.html" class="btn btn-lg btn-warning">Men's Health</a>
+				<a href="womenshealth.html" class="btn btn-lg btn-warning">Women's Health</a>
+				<a href="kidshealth.html" class="btn btn-lg btn-warning">Kid's Health</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+<!-----------------------------CAROUSEL SECTION BELOW---------------------->	
+	
+	<div class="container">
+			  <br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li>
+				  <li data-target="#myCarousel" data-slide-to="3"></li>
+				  <li data-target="#myCarousel" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<img src="./images/Jeera.jpg" alt="Jeera" width="100%" height="360px">
+					<div class="carousel-caption"><h3><a href="#"/>5 Amazing Health Benefits Of Jeera You Were Unaware Of!</h3></div>
+				  </div>
+
+				  <div class="item">
+					<img src="./images/mouthwash.jpg" alt="Mouthwash" width="100%" height="360px">
+					<div class="carousel-caption"><h3><a href="#"/>Regular Use of Mouthwash May Help To Ward Off Harmful Bacteria</h3></div>
+				  </div>
+				
+				  <div class="item">
+					<img src="./images/herbs.jpg" alt="Herbs" width="100%" height="360px">
+					<div class="carousel-caption"><h3><a href="#"/>5 Herbs To Keep Your Heart Healthy And Strong!</h3></div>
+				  </div>
+
+				  <div class="item">
+					<img src="./images/diabetesmed.jpg" alt="Diabetes" width="100%" height="360px">
+					<div class="carousel-caption"><h3><a href="#"/>Do Diabetes Medicines Help Lose Weight?</h3></div>
+				  </div>
+				  <div class="item">
+					<img src="./images/vegetables.jpg" alt="Vegetables" width="100%" height="360px">
+					<div class="carousel-caption"><h3><a href="#"/>8 Ways To Practice Portion Control For Sustained Weight Loss</h3></div>
+				  </div>
+				  
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+		</div>
+	</div>
+	
+	
+<!-----------------------------OUR SERVICE DETAILS SECTION BELOW---------------------->
+	
+	<div class="container section" id ="dietsection">
+		<section>
+			<div class="page-header" id="">
+			<h3>Diet, Food & Fitness</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				
+					<blockquote>
+						<h4 style="color:#3399FF;">DIET AND WEIGHT MANAGEMENT</h4>
+						<ul>
+							<li style="margin-left:-20px;">Slideshow: Reasons You're Not Losing Weight</li>
+							<li style="margin-left:-20px;">How to Stop Any Craving Right When It Hits</li>
+							<li style="margin-left:-20px;">Some Health Fads May Not Be All That Healthy</li>
+							
+						</ul>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">FITNESS & EXERCISE</h4>
+						<ul>
+							<li style="margin-left:-20px;">Workouts Top Trainers Do When They Only Have 15 Minutes</li>
+							<li style="margin-left:-20px;">Marathons May Cause Short-Term Kidney Injury</li>
+							<li style="margin-left:-20px;">'Pokemon Go' Players Add 2,000 Steps a Day</li>
+							<li style="margin-left:-20px;">Fitbits, Other Trackers and Heart Rate Measurement</li>
+						</ul>
+						</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">FOOD & RECEIPES</h4>
+						<ul>
+							<li style="margin-left:-20px;">Fitbits, Other Trackers and Heart Rate Measurement</li>
+							<li style="margin-left:-20px;">Video on Pressure Cooker Safety Tips</li>
+							<li style="margin-left:-20px;">Store Leftover Food</li>
+							<li style="margin-left:-20px;">Vacuum-Seal Food</li>
+						</ul>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<div class="container section" id ="healthSection">
+		<section>
+			<div class="page-header" id="">
+			<h3>Women, Men & Teens</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				
+					<blockquote>
+						<h4 style="color:#3399FF;">WOMEN's HEALTH</h4>
+						<ul>
+							<li style="margin-left:-20px;">'Cycle in a Dish' Explores Female Intricacies</li>
+							<li style="margin-left:-20px;">Belly Fat vs. Being Overweight in Older Women	</li>
+							<li style="margin-left:-20px;">Women, What’s Your Body Telling You?</li>
+							
+						</ul>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">MEN'S HEALTH</h4>
+						<ul>
+							<li style="margin-left:-20px;">Short, Bald Men May Have Their Genes to Blame</li>
+							<li style="margin-left:-20px;">Short, Bald Men May Have Their Genes to Blame</li>
+							<li style="margin-left:-20px;">Care for Your Facial Hair</li>
+							<li style="margin-left:-20px;">FDA Warns of Dangers From Testosterone Supplements</li>
+						</ul>
+						</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">TEEN HEALTH</h4>
+						<ul>
+							<li style="margin-left:-20px;">Kids in College Drink More, Smoke Less</li>
+							<li style="margin-left:-20px;">Does Your Teen Have a Mental Health Problem?</li>
+							<li style="margin-left:-20px;">Boys Victims of Dating Violence, Too</li>
+							<li style="margin-left:-20px;">Tips for Managing Social Anxiety</li>
+						</ul>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="container section" id ="beautySection">
+		<section>
+			<div class="page-header" id="">
+			<h3>Beauty, Balance & Relationships</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				
+					<blockquote>
+						<h4 style="color:#3399FF;">BEAUTY</h4>
+						<ul>
+							<li style="margin-left:-20px;">Anatomy of Lipstick</li>
+							<li style="margin-left:-20px;">Name Game:natural Beauty Products Explained	</li>
+							<li style="margin-left:-20px;">How to clean makeup	tools</li>
+						</ul>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">BALANCE</h4>
+						<ul>
+							<li style="margin-left:-20px;">Stop Thinking About Your Ex -- and Move On for Good</li>
+							<li style="margin-left:-20px;">Slideshow:Complementary and Alternative Therapies</li>
+							<li style="margin-left:-20px;">Truth About Mindfulness and Meditation</li>
+						</ul>
+						</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4 style="color:#3399FF;">Relationship</h4>
+						<ul>
+							<li style="margin-left:-20px;">Do the things you did the first year you were dating.</li>
+							<li style="margin-left:-20px;">Don't ask "how was your day."</li>
+							<li style="margin-left:-20px;">Get creative about the time you spend together.</li>
+							<li style="margin-left:-20px;">Dig deep to unearth your true feelings.</li>
+							<li style="margin-left:-20px;">See the best in your partner and the relationship.</li>
+						</ul>
+						</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<!-----------------------------ACHIEVEMENTS SECTION BELOW---------------------->
+	<!-- 
+	<div class="container">
+		<div class="jumbotron achievements">
+		
+			<div class="page-header">
+				<h3>Our Achievements: <small>We have outperformed Our Competitors through our Customer Centric high quality solutions</small></h3>
+			</div>
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Awarded The Best Healthcare Service Provider in United States in 2016</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>LiveSmart Awarded The Best Healthcare Service Provider in United States in 2016. We outperformed 150 competitors with the precision and high qulaity of our service. We believe in being customer centric and our success depends on your well being</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best1.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Makes It To Fortune 500 List</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>We are now a Fortune 500 company. It is only possible because of the trust our customers have bestowed on us. We take this opportunity to thank our customers for choosing us. We promise to move ahead with dedication and striving continuous upliftments in our servcies.</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best2.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Awarded The Best Company In Terms Of Customer Satisfaction</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>We are awarded the best company in terms of customer satisfaction. Our customers' well being and good health have been our top-most priority since the time we set forth on this mission of serving the society and our results reflect our quality of servcie and our motto.</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best3.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+
+		</div>
+	
+	</div>
+	 -->
+
+	
+	
+	<!-- MEDIA OBJECTS FOR IN THE NEWS-->
+<!--<div class="container">
+		<div class="page-header" id="feedback">
+			<h3>Live Smart: <small>In The News</small></h3>
+		</div>
+		<div class="media">
+			<div class="media-left media-top">
+					<img src="title.png" class="media-object" style="width:60px">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">Media Top</h4>
+				<p>The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain</p>
+			</div>
+		</div>
+	<div>-->
+	
+	
+<!-----------------------------FOOTER SECTION BELOW---------------------->	
+	
+	<div class="container-fluid footer">
+		<div class="container">
+			
+			
+			<div class="col-sm-6">
+				<img src="./images/title.png" class="img-responsive">
+				<p>Providing the best healthcare solutions to people.<br>Your well being is our moto and success</p>
+				
+				<!--<a href="" class="social-icons"><i class="fa fa-facebook"></i></a>-->
+				
+				
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">&raquo;Home</a></li>
+						<li><a href="index.html#aboutus">&raquo;About Us</a></li>
+						<li><a href="FindStores.html">&raquo;Medical Centers</a></li>
+						<li><a href="FindMedicine.html">&raquo;Medicines</a></li>
+						<li><a href="FindDoctor.html">&raquo;Doctors</a></li>
+						
+					</ul>
+			
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Contact Us</h3>
+					<p><strong>Headquarters:</strong>225 Huntington Avenue<br>Boston MA-02120</p>
+					<p><strong>Email Us At:</strong>care@livesmart.com</p>
+					<p><strong>Phone: </strong>+1 (800)-800-0000</p>
+					<p><strong>Fax: </strong>+1 (750)-888-9900</p>
+			
+			</div>
+			
+		</div>
+		<div class="text-center"><br><br>
+			<p><i>Copyright &copy; 2017 LiveSmart Inc.<br>
+			<a href="mailto:admin@livesmart.com">care@livesmart.com</a></i></p>
+		</div>
+	
+	</div>
+			
+			
+			
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html>

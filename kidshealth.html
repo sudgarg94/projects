@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <title>Kid's Health</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="./images/favicon.ico">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <!--<link rel="stylesheet" href="mycssfile.css">-->
+	  
+	  <script type="text/javascript" language="javascript">
+		
+		$(document).ready(function() {
+			$(".detailsdesc1").hide();
+			$(".detailsdesc2").hide();
+			$(".detailsdesc3").hide();
+			$(".detailsdesc4").hide();
+			$(".detailsdesc5").hide();
+			
+			$(".toggleContent1").click(function (){
+				$(".detailsdesc1").slideToggle(1000);
+			});
+			$(".toggleContent2").click(function (){
+				$(".detailsdesc2").slideToggle(1000);
+			});
+			$(".toggleContent3").click(function (){
+				$(".detailsdesc3").slideToggle(1000);
+			});
+			$(".toggleContent4").click(function (){
+				$(".detailsdesc4").slideToggle(1000);
+			});
+			$(".toggleContent5").click(function (){
+				$(".detailsdesc5").slideToggle(1000);
+			});
+		
+		});
+		
+		
+		
+	  </script>
+	  
+	  
+	  <style>
+		body{
+			padding-top:40px;
+			background: url("./images/bg.png");
+		}
+		.dropdown-menu{
+			background-color:#D3D3D3;
+		}
+		
+		.navbar-inverse .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+			background-color: #6495ED;
+			color: #000000;
+		}
+		
+		.btn{
+			margin-left:10px;
+		}
+		.carousel-inner .item img {
+  
+			height:450px;
+		}
+		.carousel-caption{
+			font-weight:bold;
+			font-style:italic;
+		}
+		
+		.jumbotron{
+			background-color:#E0FFFF;
+			background: url("./images/jumbo9.jpg");
+			color:#fff;
+			font-weight:bold;
+			font-size:16px;
+		}
+		
+		.jumbotron.achievements{
+			padding-top:5px;
+			padding-bottom:10px;
+			font-weight:normal;
+			color:#000000;
+		}
+		
+		.jumbotron.achievements h3, .jumbotron.achievements small{
+			color:#fff;
+			font-weight:bold;
+		}
+		
+		.section blockquote{
+			background: url("./images/test.jpg");
+			background-color:#E0FFFF;
+			font-size:18px;
+			font-weight:bold;
+			color:#fff;
+		
+		}
+		
+		.section blockquote small{
+			padding-top:15px;
+			color:#fff;
+		
+		}
+		
+		ul li a {
+		color:#fff;}
+		
+		blockquote {
+		height:300px;
+		}
+		
+		.carousel-caption a {
+			color:#fff;
+		}
+		
+		.carousel-inner img {
+			
+			height: 500px;
+		}
+		
+		.footer{
+			background-color:#333333;
+			padding:20px,0;
+			color:#fff;
+			padding-bottom:20px;
+		
+		}
+		.footer img{
+			padding-top:20px;
+		}
+		.footer ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.footer ul li a{
+			color:#fff;
+			font-size:15px
+		}
+		
+		.tipsheader {
+			text-align:center;
+			font-size:35px;
+			font-weight:bold
+		}
+		.tipsNews {
+			font-weight:bold;
+			font-size : 45px
+		}
+	
+		.headlines {
+			color:#6495ED;
+			font-weight:bold;
+		}
+		
+		h3{
+		font-size:15px;
+		font-weight:bold;
+		
+		}
+	  </style>
+	  
+</head>
+
+
+<body>
+
+<!-----------------------------NAVBAR SECTION BELOW---------------------->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class = "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">LiveSmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+			<!-- <a href="" class="btn btn-info navbar-btn navbar-right">Create Account</a>
+			<a href="" class="btn btn-info navbar-btn navbar-right">Sign In</a> -->
+			
+				<ul class="nav navbar-nav">
+								<!--<li><a href="#">Home</a></li>-->
+								<ul class="nav navbar-nav">
+								<li><a href="index.html#aboutus">About Us</a>
+								<li><a href="index.html#services">Services</a>
+								<li><a href="index.html#achievements">Achievements</a>
+								<li><a href="feedback.html">Feedback</a>
+								</ul>
+					
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Doctors
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindDoctor.html">Find A Doctor</a></li>
+								<li><form action="requestappt.php" method=post><button type="submit" class="btn">Book Appointments</button></a></form></li>
+								
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Chemists
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindStores.html">Find Stores</a></li>
+								<li><a href="FindMedicine.html">Medicines</a></li>
+							</ul>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			
+
+		</div>
+	</nav>
+
+		
+<!-----------------------------COMPANY BANNER SECTION BELOW---------------------->	
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Living Healthy</h1>
+			<br>
+			<small>Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.</small><br><br>
+			<div class="btn-group">
+				<a href="menshealth.html" class="btn btn-lg btn-warning">Men's Health</a>
+				<a href="womenshealth.html" class="btn btn-lg btn-warning">Women's Health</a>
+				<a href="kidshealth.html" class="btn btn-lg btn-warning">Kid's Health</a>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+
+<!-----------------------------Men's Health Tips------------------------>
+
+	<div class = "container panel">
+
+		<H1 class = "tipsheader" >Kids' Health Parameters</H1>
+	
+		<!--<h2 class = "tipsNews" >Men's News and Features<h2>-->
+		<h2 class = "tipsNews" >Featured News on Kid's Health<h2>
+		
+		<H3 class = "headlines">LATEST HEADLINES</h3>
+		
+		<h3>Schools Start Too Early for Kids to Sleep Enough<button type="button" class="btn btn-primary toggleContent1">Learn More</button></h3> 
+		
+		<div class="detailsdesc1">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Dennis Thompson<br><br>HealthDay Reporter</div>
+					<div class="panel-body"><p>THURSDAY, Aug. 6, 2015 (HealthDay News) -- Five out of six middle and high schools in the United States start the day too early, which keeps students from getting the sleep they need, a new government report finds.
+							Middle and high schools should aim for a start time no earlier than 8:30 a.m. to help kids get enough sleep, according to a policy statement issued by the American Academy of Pediatrics last year.<br><br>
+							
+							But a review of U.S. Department of Education data found that slightly less than 18 percent of public middle and high schools start at 8:30 a.m. or later.
+							The average school start time across the nation was 8:03 a.m., according to the report published in the Aug. 7 issue of the Morbidity and Mortality Weekly Report, a publication of the U.S. Centers for Disease Control and Prevention.
+							"Getting enough sleep is important for students' health, safety and academic performance," said lead author Anne Wheaton, an epidemiologist in the CDC's division of population health. "Early school start times, however, are preventing many adolescents from getting the sleep they need."<br><br>
+							
+							Wheaton added that she suspects busing schedules are the leading factor in early school start times.<br><br>
+
+							"For some reason, they chose to start the high school earliest, which really does fight against the biology of the high school students," she said. "They really can't get up early enough."
+							"It's been a couple of decades the research has been building up to support the AAP's recommendation," Wheaton added. "We're hoping in the coming years we'll see a trend going in the other direction, but it will take time."
+							Teenagers need to get at least eight hours of sleep per night, but two out of three high school students fail to get their full eight hours of rest on school nights, according to the report. The proportion of students who fail to get sufficient sleep has remained steady since 2007.<br>
+
+							Teens who don't get enough sleep are more likely to be overweight, suffer from depression, perform poorly in school and engage in unhealthy behaviors such as drinking, smoking and drug use, the CDC said.
+							</p>
+					</div>
+			</div>
+		</div>
+		
+		<!------------------------------------------------------------------------Section 1 Ends------------------------->
+ 
+		<H4 class = "headlines">TOP STORIES</H4>
+		
+		<h3>Too Much of This Tied to Poor Teen Mental Health<button type="button" class="btn btn-primary toggleContent2">Learn More</button></h3>
+		
+		<div class="detailsdesc2">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Alan Mozes<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							FRIDAY, July 31, 2015 (HealthDay News) -- Teens who frequently use social media are more likely to say they struggle with mental health concerns that are not being addressed, new Canadian research reveals.
+							At issue is the amount of time adolescents spend browsing and posting on sites such as Facebook, Twitter or Instagram.<br><br>
+
+							"It is difficult to speculate what mechanisms may link the use of social networking sites to mental health problems," said study author Dr. Hugues Sampasa-Kanyinga, from the department of epidemiology at Ottawa Public Health in Ottawa, Canada.<br><br>
+							
+							While the study did not prove a cause-and-effect link, Sampasa-Kanyinga noted that the "use of social networking sites can lead to poor mental health, and poor mental health may be a reason why youth use social networking sites. That said, it could be 
+							that kids with mental health problems are seeking out interactions as they are feeling isolated and alone. Or it could be that greater time online exposes one to more opportunities for cyberbullying, for instance."<br><br>
+
+							Sampasa-Kanyinga and study co-author Dr. Rosamund Lewis reported their findings online recently in the journal Cyberpsychology, Behavior, and Social Networking.
+							In the study, the researchers analyzed part of a youth health survey that tallied responses from more than 750 students who were enrolled in grades 7 through 12 (average age of 14) in Ottawa.<br><br>
+
+							Just over a quarter said they accessed social networking sites for more than two hours every day, while about a fifth said they never did or did so rarely. More than half (54 percent) said they surfed such sites, but for two hours or less daily.
+							Nearly two-thirds described their mental health status as either "excellent" or "very good." About a fifth said their mental state was "good," while about 17 percent described it as "poor."</p>
+					</div>
+			</div>
+		</div>
+		
+		<h3>Screen Depressed Teens for Heart Disease: Experts<button type="button" class="btn btn-primary toggleContent3">Learn More</button></h3>
+		
+		<div class="detailsdesc3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Robert Preidt<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+								TUESDAY, Aug. 11, 2015 (HealthDay News) -- Teens with major depression or bipolar disorder may face a higher risk for heart disease and they need to be followed closely, new recommendations from the American Heart Association state.
+								"Youth with mood disorders are not yet widely recognized as a group at increased risk for excessive and early heart disease. We hope these guidelines will spur action from patients, families and health care providers to reduce the risk
+								of cardiovascular disease among these youth," Dr. Benjamin Goldstein, a child-adolescent psychiatrist at Sunnybrook Health Sciences Center at the University of Toronto, said in a heart association news release.<br><br>
+
+								Goldstein and his colleagues reviewed published studies and found that teens with major depression or bipolar disorder were more likely than other teens to have: high blood pressure; high cholesterol; obesity, especially around the midsection; type 2 diabetes; and hardening of the arteries.<br><br>
+
+								A 2011 study included in the review looked at more than 7,000 American adults younger than 30 and found that a history of depression or attempted suicide was the top risk factor for heart disease death caused by narrowed/blocked arteries in young women; it was the fourth highest risk factor in young men.
+								The reasons for this increased risk are unclear. It's known teens with mood disorders are more likely to have unhealthy habits such as smoking, drug use and physical inactivity, but these factors alone do not explain why they are more likely to develop heart disease, the researchers said.<br><br>
+
+								Some medications used to treat mood disorders can cause weight gain, high blood pressure, high cholesterol and high blood sugar levels, but most of the teens in the studies included in the review were not taking these medicines.
+								Some studies have found that inflammation and other types of cell damage are more common among teens with mood disorders, and that may help explain their increased risk of heart disease, the experts added.
+								The statement was published Aug. 10 in the journal Circulation.<br><br>
+
+								"Mood disorders are often lifelong conditions, and managing cardiovascular risk early and assertively is tremendously important if we are to be successful in ensuring that the next generation of youth has better cardiovascular outcomes," Goldstein said.
+								"These disorders indicate an increased risk of heart disease that requires increased vigilance and action at the earliest possible stage," he concluded.
+							</p>
+					</div>
+			</div>
+		</div>
+		
+		
+		<h3>How ADHD Is Different for Girls<button type="button" class="btn btn-primary toggleContent4">Learn More</button></h3>
+		
+		<div class="detailsdesc4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Dennis Thompson<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							When you picture a child with ADHD, a few images may come to mind: A kid who doesn’t ever seem to sit still. A child who can’t stop interrupting the teacher or goofing off in class. A C- and D-student who never manages to finish a single homework assignment.
+								Symptoms like these are easy to spot, but they’re also much less common for girls with the disorder. And that’s why their parents, teachers, and others have a harder time knowing when they have it, says Michael Manos, PhD, head of the ADHD Center for Evaluation and Treatment at Cleveland Clinic.
+								“Kids who have problems with attention rather than hyperactivity, on the other hand, are barely noticed, and yet those ADHD symptoms are much more prevalent in girls than in boys.”<br><br>
+								
+								<h5><b>What ADHD Looks Like in Girls</b></h5>
+								
+								Boys with ADHD tend to have a lot of behavior problems, and the key issue is often how their disorder affects others, says Patricia Quinn, MD, co-author of Understanding Girls with ADHD. With girls, it’s more about how their disorder affects themselves.
+								Rather than troublemakers, girls with ADHD tend to be daydreamers. “Your daughter may do what she’s told, but she might have difficulty focusing, paying attention, or finishing her work,” Manos says.
+								Still, bad grades aren’t always a telltale sign. “Girls sometimes continue to do well in school, particularly if they’re very bright or hard working,” Quinn says. “They compensate. Parents might not realize there’s a problem, but the girls recognize that they need a lot more help than anyone else, and they realize that they’re different.”
+								If schoolwork or other tasks just seem harder for your daughter than they do for other kids -- if she’s staying up late doing homework, if she’s only able to study when conditions are “just so,” if she’s dreading going to school -- those are signals that there may be something going on, Quinn says.<br><br>
+								
+								
+								<h5><b>Beyond Behavior and Attention</b></h5>
+								
+								Although girls’ ADHD symptoms are more likely to be overlooked than boys’, it doesn’t mean the disorder affects them less. Studies have shown that girls with ADHD have a harder time than boys in some ways. They’re more likely to have anxiety and depression, as well as low self-esteem.
+								“A girl without ADHD might not be able to play volleyball as well as other girls, but she doesn’t necessarily infer that there’s something wrong with her,” Manos says. “Girls with ADHD, on the other hand, tend to be more self-critical.”
+								As a result, Quinn says, self-injury, eating disorders, and even suicide attempts are more common among girls with ADHD than among girls without. “So getting a diagnosis is very important, even if your child is able to compensate,” she says.<br><br>
+								
+								<h5><b>Getting a Diagnosis</b></h5>
+								
+								There’s no single test to diagnose ADHD, and symptoms can be hard to untangle from “normal” childhood behavior. If you think your daughter might have ADHD, it’s important to find a doctor or health care professional who has experience diagnosing it, especially in children. You can talk first to your child’s pediatrician, who may also refer you to a mental health specialist, like a child psychiatrist or psychologist.
+								
+								
+								<hr>
+								
+								<h3>Schools and Healthy Kids Tips</h3>
+								<p>
+								Schools can do a lot to promote and encourage healthy eating and physical activity for their students. This can happen at a whole-of-school level or in individual classrooms.<br><br>
+								<h5><b>Here are some ideas to consider:</b></h5>
+								<ul>
+									<li>Develop a healthy lunchbox policy to promote the importance of eating a nutritious lunch and snacks.</li>
+								<li>Schedule a fruit, vegetable and water break during the day to encourage students to eat fruit and vegetables and drink water.</li>
+								<li>Include ‘energisers’ during class time to encourage children to get moving.</li>
+								<li>Create activity boxes with a variety of physical activity equipment that classes or individual children can use during recess or lunch breaks.</li>
+								<li>Establish a school vegetable garden and involve students in all aspects of growing and nurturing the produce – they’ll quickly get enthusiastic! Vegies from the garden can be used in food preparation lessons or provided to the school canteen.</li>
+								<li>Develop a school orientation package for parents on healthy eating (with a focus on healthy snacks, lunches and drinking water) and activity ideas for children starting school. Highlight the many ways that the school supports healthy eating and physical activity and invite parents to be involved.</li>
+								<li>Encourage students to have a water bottle on their desks and drink water throughout the day.</li></p>
+					</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+<!-----------------------------FOOTER SECTION BELOW---------------------->	
+	
+	<div class="container-fluid footer">
+		<div class="container">
+			
+			
+			<div class="col-sm-6">
+				<img src="./images/title.png" class="img-responsive">
+				<p>Providing the best healthcare solutions to people.<br>Your well being is our moto and success</p>
+				
+				<!--<a href="" class="social-icons"><i class="fa fa-facebook"></i></a>-->
+				
+				
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">&raquo;Home</a></li>
+						<li><a href="index.html#aboutus">&raquo;About Us</a></li>
+						<li><a href="FindStores.html">&raquo;Medical Centers</a></li>
+						<li><a href="FindMedicine.html">&raquo;Medicines</a></li>
+						<li><a href="FindDoctor.html">&raquo;Doctors</a></li>
+						
+					</ul>
+			
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Contact Us</h3>
+					<p><strong>Headquarters:</strong>225 Huntington Avenue<br>Boston MA-02120</p>
+					<p><strong>Email Us At:</strong>care@livesmart.com</p>
+					<p><strong>Phone: </strong>+1 (800)-800-0000</p>
+					<p><strong>Fax: </strong>+1 (750)-888-9900</p>
+			
+			</div>
+			
+		</div>
+		<div class="text-center"><br><br>
+			<p><i>Copyright &copy; 2017 LiveSmart Inc.<br>
+			<a href="mailto:admin@livesmart.com">care@livesmart.com</a></i></p>
+		</div>
+	
+	</div>
+			
+			
+			
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html> 
