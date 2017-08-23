@@ -1,0 +1,7 @@
+0	 0	 books.xml		1
+0 	 0 	 hello.txt     		1
+0	 0	 mock_data.csv		1
+0	 0	 promotion.html		1
+0	 0	 resume.doc		1
+0 	 0 	 try.pdf	     	1
+
