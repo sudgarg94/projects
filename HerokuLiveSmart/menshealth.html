@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <title>Men's Health</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="./images/favicon.ico">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <!--<link rel="stylesheet" href="mycssfile.css">-->
+	  
+	  <script type="text/javascript" language="javascript">
+		
+		$(document).ready(function() {
+			$(".detailsdesc1").hide();
+			$(".detailsdesc2").hide();
+			$(".detailsdesc3").hide();
+			$(".detailsdesc4").hide();
+			$(".detailsdesc5").hide();
+			
+			$(".toggleContent1").click(function (){
+				$(".detailsdesc1").slideToggle(1000);
+			});
+			$(".toggleContent2").click(function (){
+				$(".detailsdesc2").slideToggle(1000);
+			});
+			$(".toggleContent3").click(function (){
+				$(".detailsdesc3").slideToggle(1000);
+			});
+			$(".toggleContent4").click(function (){
+				$(".detailsdesc4").slideToggle(1000);
+			});
+			$(".toggleContent5").click(function (){
+				$(".detailsdesc5").slideToggle(1000);
+			});
+		
+		});
+		
+		
+		
+	  </script>
+	  
+	  
+	  <style>
+		body{
+			padding-top:40px;
+			background: url("./images/bg.png");
+		}
+		.dropdown-menu{
+			background-color:#D3D3D3;
+		}
+		
+		.navbar-inverse .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+			background-color: #6495ED;
+			color: #000000;
+		}
+		
+		.btn{
+			margin-left:10px;
+		}
+		.carousel-inner .item img {
+  
+			height:450px;
+		}
+		.carousel-caption{
+			font-weight:bold;
+			font-style:italic;
+		}
+		
+		.jumbotron{
+			background-color:#E0FFFF;
+			background: url("./images/jumbo9.jpg");
+			color:#fff;
+			font-weight:bold;
+			font-size:16px;
+		}
+		
+		.jumbotron.achievements{
+			padding-top:5px;
+			padding-bottom:10px;
+			font-weight:normal;
+			color:#000000;
+		}
+		
+		.jumbotron.achievements h3, .jumbotron.achievements small{
+			color:#fff;
+			font-weight:bold;
+		}
+		
+		.section blockquote{
+			background: url("./images/test.jpg");
+			background-color:#E0FFFF;
+			font-size:18px;
+			font-weight:bold;
+			color:#fff;
+		
+		}
+		
+		.section blockquote small{
+			padding-top:15px;
+			color:#fff;
+		
+		}
+		
+		ul li a {
+		color:#fff;}
+		
+		blockquote {
+		height:300px;
+		}
+		
+		.carousel-caption a {
+			color:#fff;
+		}
+		
+		.carousel-inner img {
+			
+			height: 500px;
+		}
+		
+		.footer{
+			background-color:#333333;
+			padding:20px,0;
+			color:#fff;
+			padding-bottom:20px;
+		
+		}
+		.footer img{
+			padding-top:20px;
+		}
+		.footer ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.footer ul li a{
+			color:#fff;
+			font-size:15px
+		}
+		
+		.tipsheader {
+			text-align:center;
+			font-size:35px;
+			font-weight:bold
+		}
+		.tipsNews {
+			font-weight:bold;
+			font-size : 45px
+		}
+	
+		.headlines {
+			color:#6495ED;
+			font-weight:bold;
+		}
+		
+		h3{
+		font-size:15px;
+		font-weight:bold;
+		
+		}
+	  </style>
+	  
+</head>
+
+
+<body>
+
+<!-----------------------------NAVBAR SECTION BELOW---------------------->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class = "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">LiveSmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+			<!-- <a href="" class="btn btn-info navbar-btn navbar-right">Create Account</a>
+			<a href="" class="btn btn-info navbar-btn navbar-right">Sign In</a> -->
+			
+				<ul class="nav navbar-nav">
+								<!--<li><a href="#">Home</a></li>-->
+								<ul class="nav navbar-nav">
+								<li><a href="index.html#aboutus">About Us</a>
+								<li><a href="index.html#services">Services</a>
+								<li><a href="index.html#achievements">Achievements</a>
+								<li><a href="feedback.html">Feedback</a>
+								</ul>
+					
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Doctors
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindDoctor.html">Find A Doctor</a></li>
+								<li><form action="requestappt.php" method=post><button type="submit" class="btn">Book Appointments</button></a></form></li>
+								
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Chemists
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindStores.html">Find Stores</a></li>
+								<li><a href="FindMedicine.html">Medicines</a></li>
+							</ul>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			
+
+		</div>
+	</nav>
+
+	
+	
+<!-----------------------------COMPANY BANNER SECTION BELOW---------------------->	
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Living Healthy</h1>
+			<br>
+			<small>Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.</small><br><br>
+			<div class="btn-group">
+				<a href="menshealth.html" class="btn btn-lg btn-warning">Men's Health</a>
+				<a href="womenshealth.html" class="btn btn-lg btn-warning">Women's Health</a>
+				<a href="kidshealth.html" class="btn btn-lg btn-warning">Kid's Health</a>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+	
+
+<!-----------------------------Men's Health Tips------------------------>
+
+	<div class = "container panel">
+
+		<H1 class = "tipsheader" >Men's Health Tips</H1>
+	
+		<!--<h2 class = "tipsNews" >Men's News and Features<h2>-->
+		
+		<H3 class = "headlines">LATEST HEADLINES</h3>
+		
+		<h3>The Grayer His Hair, the Higher His Heart Risk?<button type="button" class="btn btn-primary toggleContent1">Learn More</button></h3> 
+		
+		<div class="detailsdesc1">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Alan Mozes<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>MONDAY, April 10, 2017 (HealthDay News) -- Beyond signaling the march of time, gray hair may also point to 	a 	higher risk of heart disease for men, new research suggests.
+						But don't panic if you sport silvery locks -- the study only showed an association, not a cause-and-effect link, between hair color and heart risks.<br><br>
+						The finding stems from an analysis that looked at 545 adult men for signs of heart trouble, and then cross-referenced the results with hair color.
+						"In our population, a high hair-whitening score was associated with an increased risk of atherosclerotic coronary artery disease," said study author Irini Samuel. She is a cardiologist at Cairo University, in Egypt.
+						Atherosclerosis refers to the build-up of plaque in the arteries.<br><br>
+						Samuel said the finding held up regardless of a man's age or whether or not he was already known to face a high risk for developing heart disease.
+						The frequency with which women tend to color their hair made it impossible to include them in the analysis, Samuel noted. So, her team focused exclusively on men, all of whom underwent scans that looked for indications of heart disease, such as plaque build-up.<br><br>
+						The participants -- ranging in age from 42 to 64 -- were then divided into five groups based on the degree to which their hair had grayed. The groups ranged from "pure black hair" at one extreme to "pure white" at the other, with shades of gray in between.
+						The investigators found that 80 percent of the participants showed signs of heart disease. And those who did registered "significantly higher" in terms of hair-whitening scores.<br><br>
+						The researchers noted that simply getting older boosts the likelihood that a man's hair will turn gray.
+						However, at the same time, graying hair may also go hand-in-hand with unhealthy "biological aging," since both unfold along similar lines, the research team suggested.<br><br>
+						Those lines include several forms of cellular-level degradation, Samuel explained, including an increasing risk for system-wide inflammation, hormonal changes, and an impaired ability for DNA to repair itself and for cells to divide and grow.<br>
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<!------------------------------------------------------------------------Section 1 Ends------------------------->
+ 
+		<H4 class = "headlines">TOP STORIES</H4>
+		
+		<h3>Multivitamins May Not Help Men's Hearts<button type="button" class="btn btn-primary toggleContent2">Learn More</button></h3>
+		
+		<div class="detailsdesc2">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Robert Preidt<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							FRIDAY, April 7, 2017 (HealthDay News) --
+							Millions of American men pop a multivitamin each day, but new research shows the pills won't help the heart -- even if a man's nutrition is lacking.
+							"Many had thought that men with 'poor' nutritional status at baseline may benefit more from long-term multivitamin use on cardiovascular outcomes; however, we did not see any evidence for this in our recent analysis," study author Howard Sesso, of Brigham and Women's Hospital in Boston, said in a hospital news release.<br><br>
+							According to background information from the researchers, more than half of older Americans take a multivitamin each day. However, many prior studies have shown little evidence of any health benefit.
+							In the new research, Sesso and his colleagues tracked data from an ongoing study of more than 14,000 U.S. male doctors over the age of 50. A prior look at this data had found that taking multivitamins did not reduce the men's risk of heart disease over 11 years of follow-up.
+							But would the same be true for men who had relatively poor diets, perhaps lacking in certain nutrients?<br><br>
+							According to the new report, the results were the same -- daily use of multivitamins did not reduce the risk of heart disease, even in this more nutritionally challenged subset.
+							Two experts -- one a cardiologist, one a nutritionist -- had somewhat differing views on the findings, however.
+							"This study, like previous studies, suggests that multivitamin use does not reduce risk of heart disease -- even in men with poor nutrition," said Dr. Kevin Marzo. He's chief of cardiology at NYU Winthrop-University Hospital in Mineola, N.Y.
+							Marzo believes too many Americans view multivitamins as a "quick fix" to ward off health woes.<br><br>
+							"Prevention strategies for reducing heart disease risk should focus not on dietary supplements but rather on regular exercise and a healthy diet rich in vegetables, whole grains and unsaturated fats," he said.
+							
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<h3>Short, Bald Men May Have Their Genes to Blame<button type="button" class="btn btn-primary toggleContent3">Learn More</button></h3>
+		
+		<div class="detailsdesc3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Robert Preidt<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							FRIDAY, March 10, 2017 (HealthDay News) -- Mother Nature may hit some men with a double whammy, as new research suggests genetic links between short stature and premature baldness.
+							German scientists were able to pinpoint "63 alterations in the human genome that increase the risk of premature hair loss," explained study leader Dr. Stefanie Heilmann-Heimbach, a human geneticist at the University of Bonn.
+							"Some of these alterations were also found in connection with other characteristics and illnesses, such as reduced body size," she said in a university news release.<br><br>
+							In its research, Heilmann-Heimbach's team analyzed the genes of about 11,000 men with premature hair loss and another 12,000 men with no hair loss.
+							Besides the connection to short stature, the findings also confirmed a previously identified link between premature hair loss and an increased risk of prostate cancer.
+							But there was good news, too -- the study did not support a prior theory that men with premature baldness are at any higher risk for heart disease.<br><br>
+							The study also uncovered links between a propensity to baldness in males who went through puberty relatively early, and to those with light skin color and increased bone density.
+							According to study co-author Markus Nothen, the latter two connections might be tied to vitamin D, because humans manufacture the bone-enriching nutrient when sunlight hits the skin.
+							So, the link between baldness, pale skin and tougher bones "could indicate that men with hair loss are better able to use sunlight to synthesize vitamin D," said Nothen, who directs the university's Institute of Human Genetics.
+							The finding might also help explain "why white men in particular lose their hair prematurely," he added.<br><br>
+							Nothen stressed that "men with premature hair loss do not need to be concerned" by the new findings.<br><br>
+							"The risks of illness are only increased slightly," he noted. "It is, however, exciting to see that hair loss is by no means an isolated characteristic, but instead displays various relationships with other characteristics."
+							The study was published recently in the journal Nature Communications.<br>
+							</p><hr>
+					</div>
+			</div>
+		</div>
+		
+		
+		<h3>Impotence Meds Might Give Men's Hearts a Boost<button type="button" class="btn btn-primary toggleContent4">Learn More</button></h3>
+		
+		<div class="detailsdesc4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Dennis Thompson<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							THURSDAY, March 9, 2017 (HealthDay News) -- Men taking Viagra, Levitra or Cialis to revitalize their sex life might experience a valuable side benefit: enhanced heart health, researchers say.
+							Those erectile dysfunction drugs, called PDE5 inhibitors, appear to reduce a man's risk of death or heart failure after a first heart attack, according to preliminary study findings.
+							Men taking this type of ED drug had a 33 percent reduced risk of death within three years of their first heart attack, compared to men not taking the PDE5 inhibitor, said lead researcher Dr. Daniel Andersson.
+							The men also experienced a 40 percent reduced risk of subsequent hospitalization for heart failure, said Andersson, a postdoctoral researcher at the Karolinska Institute in Sweden.
+							Further, it appeared that taking more of the drug increased the survival advantage, he added.<br><br>
+							"We also find a dose-dependent relationship between amount of dispensed PDE5 inhibitors and increased survival," Andersson said. But, he warned that the study size was not large enough to show a definitive link between dose and benefit.
+							The results surprised Andersson and his colleagues because erectile dysfunction is a known risk factor for heart disease. They had expected that treatment for ED would be associated with an increased risk of death.
+							This should give some comfort to men who have had a heart attack but want to use these meds to improve their sex life, said Dr. Martha Gulati, chief of cardiology at the University of Arizona College of Medicine-Phoenix.
+							"Obviously, we do worry about the use of these medications in patients who already had a heart attack," said Gulati, who is also editor-in-chief of cardiosmart.org, the American College of Cardiology's consumer-friendly website.
+							"Knowing that it is relatively safe" is important, she added.<br><br>
+							PDE5 inhibitors such as Viagra (sildenafil), Cialis (tadalafil) and Levitra (vardenafil) work by causing blood vessels to expand, improving blood flow to the penis and making it easier to achieve and maintain an erection.
+							To investigate the drugs' effect on heart health, the researchers used health records to identify more than 43,000 Swedish men who had suffered a first heart attack between 2007 and 2013.</p>
+					</div>
+			</div>
+		</div>
+		
+		<h3>7 Muscle Foods for Men<button type="button" class="btn btn-primary toggleContent5">Learn More</button></h3>
+		<div class="detailsdesc5">
+			<div class="panel panel-primary">
+				<div class="panel-heading">WorkOut and Fitness Regimes</div>
+										<div class="panel-body">Building abs and sculpting muscles starts long before you ever hit the gym. Muscle growth requires a formula based on drinking plenty of fluids and eating the right energy-rich foods along with lifting weights. The right formula will fuel workouts, repair muscle tissue, and help you sculpt your physique.<br>
+										<h5><b>Nutrition Game Plan</b></h5>
+										<ul>
+											<li>Fruit and vegetables are the foundation of all healthy diets, providing fiber, vitamins, minerals, and fluids. Vegetables contain small amounts of protein.</li>
+										<li>Low-fat dairy provides high-quality protein, carbs, and essential vitamins such as vitamin D, potassium, and calcium. Sports nutritionists Christine Rosenbloom, PhD, RD, and Nancy Clark, RD, recommend chocolate milk as a good workout recovery beverage. If you are lactose intolerant, you can index yogurt with active cultures.</li>
+										<li>Lean meat is a great source of protein, iron for oxygen transport to muscles, and amino acids including leucine, which, Rosenbloom says, is thought to be a trigger for muscle growth.</li>
+										<li>Dark-meat chicken, compared to white meat, provides 25% more iron and three times the zinc for a healthy immune system.</li>
+										<li>Eggs "contain all of the essential amino acids," Rosenbloom says. One a day is fine according to the 2010 Dietary Guidelines, but don’t throw out the yolk. According to Rosenbloom, "Half the protein is in the yolk along with other import nutrients like lutein for eye health.”</li>
+										<li>Nuts -- unsalted and either raw or roasted -- are a good source of protein. They also contain vitamins, antioxidants, fiber, and healthy fats.</li>
+										<li>Beans and whole grains are quality carbs that contain small amounts of protein for energy and muscle repair along with fiber, vitamins, and antioxidants.</li>
+										</ul>
+										<h5><b>Timing Is Everything</b></h5>
+										Timing is critical in muscle development because you need carbs and protein to perform strength training and protein and carbs for muscle recovery. The best plan is to eat a diet containing both nutrients and small amounts of healthy fats throughout the day.<br>
+										“Consuming a protein beverage like chocolate milk within an hour after exercise will give muscle the building blocks it needs when it is most receptive for repair” says Rosenbloom.<br>
+										If you will be eating a meal within 1-2 hours after a strenuous workout, Rosenbloom says you don’t need a snack and can wait for the meal to provide the recovery nutrition<br>
+										</p>
+									</div>
+			</div>
+		</div>
+		
+	</div>
+	
+<!-----------------------------FOOTER SECTION BELOW---------------------->	
+	
+	<div class="container-fluid footer">
+		<div class="container">
+			
+			
+			<div class="col-sm-6">
+				<img src="./images/title.png" class="img-responsive">
+				<p>Providing the best healthcare solutions to people.<br>Your well being is our moto and success</p>
+				
+				<!--<a href="" class="social-icons"><i class="fa fa-facebook"></i></a>-->
+				
+				
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">&raquo;Home</a></li>
+						<li><a href="index.html#aboutus">&raquo;About Us</a></li>
+						<li><a href="FindStores.html">&raquo;Medical Centers</a></li>
+						<li><a href="FindMedicine.html">&raquo;Medicines</a></li>
+						<li><a href="FindDoctor.html">&raquo;Doctors</a></li>
+						
+					</ul>
+			
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Contact Us</h3>
+					<p><strong>Headquarters:</strong>225 Huntington Avenue<br>Boston MA-02120</p>
+					<p><strong>Email Us At:</strong>care@livesmart.com</p>
+					<p><strong>Phone: </strong>+1 (800)-800-0000</p>
+					<p><strong>Fax: </strong>+1 (750)-888-9900</p>
+			
+			</div>
+			
+		</div>
+		<div class="text-center"><br><br>
+			<p><i>Copyright &copy; 2017 LiveSmart Inc.<br>
+			<a href="mailto:admin@livesmart.com">care@livesmart.com</a></i></p>
+		</div>
+	
+	</div>
+			
+			
+			
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html> 

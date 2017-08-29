@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <title>Women's Health</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="./images/favicon.ico">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!--<link rel="stylesheet" href="mycssfile.css">-->
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function() {
+			$(".detailsdesc1").hide();
+			$(".detailsdesc2").hide();
+			$(".detailsdesc3").hide();
+			$(".detailsdesc4").hide();
+			$(".detailsdesc5").hide();
+			$(".detailsdesc6").hide();
+			
+			$(".toggleContent1").click(function (){
+				$(".detailsdesc1").slideToggle(1000);
+			});
+			$(".toggleContent2").click(function (){
+				$(".detailsdesc2").slideToggle(1000);
+			});
+			$(".toggleContent3").click(function (){
+				$(".detailsdesc3").slideToggle(1000);
+			});
+			$(".toggleContent4").click(function (){
+				$(".detailsdesc4").slideToggle(1000);
+			});
+			$(".toggleContent5").click(function (){
+				$(".detailsdesc5").slideToggle(1000);
+			});
+			$(".toggleContent6").click(function (){
+				$(".detailsdesc6").slideToggle(1000);
+			});
+		
+		});
+	  </script>
+	  
+	  <style>
+		body{
+			padding-top:40px;
+			background: url("./images/bg.png");
+		}
+		.dropdown-menu{
+			background-color:#D3D3D3;
+		}
+		
+		.navbar-inverse .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+			background-color: #6495ED;
+			color: #000000;
+		}
+		
+		.btn{
+			margin-left:10px;
+		}
+		.carousel-inner .item img {
+  
+			height:450px;
+		}
+		.carousel-caption{
+			font-weight:bold;
+			font-style:italic;
+		}
+		
+		.jumbotron{
+			background-color:#E0FFFF;
+			background: url("./images/jumbo9.jpg");
+			color:#fff;
+			font-weight:bold;
+			font-size:16px;
+		}
+		
+		.jumbotron.achievements{
+			padding-top:5px;
+			padding-bottom:10px;
+			font-weight:normal;
+			color:#000000;
+		}
+		
+		.jumbotron.achievements h3, .jumbotron.achievements small{
+			color:#fff;
+			font-weight:bold;
+		}
+		
+		.section blockquote{
+			background: url("./images/test.jpg");
+			background-color:#E0FFFF;
+			font-size:18px;
+			font-weight:bold;
+			color:#fff;
+		
+		}
+		
+		.section blockquote small{
+			padding-top:15px;
+			color:#fff;
+		
+		}
+		
+		ul li a {
+		color:#fff;}
+		
+		blockquote {
+		height:300px;
+		}
+		
+		.carousel-caption a {
+			color:#fff;
+		}
+		
+		.carousel-inner img {
+			
+			height: 500px;
+		}
+		
+		.footer{
+			background-color:#333333;
+			padding:20px,0;
+			color:#fff;
+			padding-bottom:20px;
+		
+		}
+		.footer img{
+			padding-top:20px;
+		}
+		.footer ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.footer ul li a{
+			color:#fff;
+			font-size:15px
+		}
+		
+		.tipsheader {
+			text-align:center;
+			font-size:80px
+		}
+		
+		.tipsNews {
+			font-weight:bold;
+			font-size : 45px
+		}
+	
+		.headlines {
+			color:#6495ED;
+			font-weight:bold;
+		}
+	  </style>
+	  
+</head>
+
+
+<body>
+
+<!-----------------------------NAVBAR SECTION BELOW---------------------->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class = "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">LiveSmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+			<!-- <a href="" class="btn btn-info navbar-btn navbar-right">Create Account</a>
+			<a href="" class="btn btn-info navbar-btn navbar-right">Sign In</a> -->
+			
+				<ul class="nav navbar-nav">
+								<!--<li><a href="#">Home</a></li>-->
+								<ul class="nav navbar-nav">
+								<li><a href="index.html#aboutus">About Us</a>
+								<li><a href="index.html#services">Services</a>
+								<li><a href="index.html#achievements">Achievements</a>
+								<li><a href="feedback.html">Feedback</a>
+								</ul>
+					
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Doctors
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindDoctor.html">Find A Doctor</a></li>
+								<li><form action="requestappt.php" method=post><button type="submit" class="btn">Book Appointments</button></a></form></li>
+								
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Chemists
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindStores.html">Find Stores</a></li>
+								<li><a href="FindMedicine.html">Medicines</a></li>
+							</ul>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			
+
+		</div>
+	</nav>
+
+
+<!-----------------------------COMPANY BANNER SECTION BELOW---------------------->	
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Living Healthy</h1>
+			<br>
+			<small>Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.</small><br><br>
+			<div class="btn-group">
+				<a href="menshealth.html" class="btn btn-lg btn-warning">Men's Health</a>
+				<a href="womenshealth.html" class="btn btn-lg btn-warning">Women's Health</a>
+				<a href="kidshealth.html" class="btn btn-lg btn-warning">Kid's Health</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+<!-----------------------------Women's Health Tips------------------------>
+<div class = "container panel">
+
+		<H1 class = "tipsheader" >Women's Health Tips</H1>
+	
+		<!--<h2 class = "tipsNews" >Men's News and Features<h2>-->
+		
+		<H3 class = "headlines">LATEST HEADLINES</h3>
+		
+		<h3>Flame Retardants Tied to Thyroid Cancer Risk<button type="button" class="btn btn-primary toggleContent1">Learn More</button></h3> 
+		
+		<div class="detailsdesc1">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Alan Mozes<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+					TUESDAY, April 11, 2017 (HealthDay News) -- 
+					Flame retardants used in many home furnishings may boost the risk for thyroid cancer, researchers report.
+					"Thyroid cancer is the fastest increasing cancer in the U.S., with most of the increase in new cases being papillary thyroid cancer," said study lead investigator Dr. Julie Ann Sosa. This is the most common type of thyroid cancer.
+					"Recent studies suggest that environmental factors may, in part, be responsible for this increase," added Sosa, a professor of surgery and medicine at Duke University School of Medicine in Durham, N.C.<br><br>
+					The study researchers focused on a class of flame retardants known as PBDEs (polybrominated diphenyl ethers). They've been used to prevent or delay fires in building materials, electronics, furnishings, cars and airplanes, plastics, foams and textiles.
+					Animal studies have shown that several classes of flame retardants interfere with thyroid function, Sosa said. So she and her colleagues wanted to explore a possible relationship with thyroid cancer.
+					To assess the potential risk, the study team collected dust samples from the homes of 140 participants, half of whom had papillary thyroid cancer. About 80 percent of the participants were women, as they're more likely to develop thyroid cancer than men. On average, the participants had lived in their homes for more than a decade.<br><br>
+					The researchers also took blood samples to evaluate exposure to certain flame retardants.
+					The team found that those living in homes exposed to higher levels of two types of PBDE flame retardants were at an increased risk for having papillary thyroid cancer. Those two types are known as BDE-209 and TCEP.
+					People living in homes with high levels of BDE-209 were more than twice as likely to have thyroid cancer as those living in homes with low exposure levels, the study found.<br><br>
+					And participants with high levels of TCEP in their house dust were more than four times as likely to have larger, more aggressive tumors, the researchers said.
+					Sosa presented the findings at a recent meeting of the Endocrine Society in Orlando, Fla.
+					The research doesn't establish a direct cause-and-effect relationship between the cancer and the flame-retarding chemicals.<br><br>
+					Still, "our study results suggest that higher exposure to several flame retardants in the home environment may be associated with the diagnosis and severity of papillary thyroid cancer, potentially explaining some of the observed increase in the incidence of thyroid cancer," Sosa said in a society news release.
+					Until published in a peer-reviewed medical journal, research presented at meetings is usually considered preliminary.<br>
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<!------------------------------------------------------------------------Section 1 Ends------------------------->
+ 
+		<H4 class = "headlines">TOP STORIES</H4>
+		
+		<h3>'Cycle in a Dish' Explores Female Intricacies<button type="button" class="btn btn-primary toggleContent2">Learn More</button></h3>
+		
+		<div class="detailsdesc2">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Robert Preidt<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+							WEDNESDAY, March 29, 2017 (HealthDay News) -- Scientists say they have created a palm-size model of the female reproductive system that even has a period.
+							Dubbed a menstrual cycle in a dish, the miniature 3-D replica includes human and rodent tissue and models of ovaries, fallopian tubes, the uterus, cervix, vagina and liver.
+							The technology could lead to improvements in treating diseases in women's reproductive organs, including cancer and infertility, the model's creators said.<br><br>
+							"This is nothing short of a revolutionary technology," lead investigator Teresa Woodruff said.
+							Woodruff is a reproductive scientist and director of the Women's Health Research Institute at Northwestern University's Feinberg School of Medicine in Chicago.
+							EVATAR, as it's called, resembles a small cube. A special fluid pumping through all of the organ models performs the function of blood.<br><br>
+
+							Hormones and other secreted substances mimic how they work together in the body.
+							The technology can be used to test new drugs to see how females process medications differently from males, the scientists said.
+							It should also add to knowledge about female reproductive tract disorders, such as fibroids -- noncancerous uterine growths that affect up to eight in 10 women -- and endometriosis, the researchers said. Endometriosis is the condition where tissue that's normally inside the uterus grows outside the uterus.<br><br>
+							It may even be possible to use the stem cells of an individual patient to create a personalized model of their reproductive system, Woodruff noted.
+							"If I had your stem cells and created a heart, liver, lung and an ovary, I could test 10 different drugs at 10 different doses on you and say, 'Here's the drug that will help your Alzheimer's or Parkinson's or diabetes,' " Woodruff said in a university news release.
+							"It's the ultimate personalized medicine, a model of your body for testing drugs," she added.<br><br>
+							Of course, much more research is needed before that becomes a reality. Also, research involving animal tissue isn't always replicated in humans.
+							The project is part of a U.S. National Institutes of Health effort to create "a body on a chip."
+							The research is described in a paper published March 28 in the journal Nature Communications.<br>
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<h3>Here's What Really Happens When You Wear High Heels<button type="button" class="btn btn-primary toggleContent3">Learn More</button></h3>
+		
+		<div class="detailsdesc3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">WebMD Feature from Greatist <br>By Alyssa Raiola</div>
+					<div class="panel-body">
+					<p>
+					Greatist logoIf you've ever worn stillettos, you know how painful they can be. Even though it's trendy to opt for more comfortable footwear these days (thanks athleisure movement!)—we still wear heels, whether on special occasions or every day because it's company dress code (yes, even in 2016!). But high heels can cause some serious problems for your body.<br>
+					Your feet are the base of your body's movement and posture, so high heels can affect your entire skeleton. "Wearing heels shifts your weight toward the balls of the feet, so your knees and hips go forward and your back must hyperextend backward in order to maintain balance," says Jacqueline Sutera, podiatrist and spokesperson for the American Podiatric Medical Association.<br><br>
+					Think of your feet like the foundation of a house, says Adam Kelonsky, a podiatrist at the NYU Langone Medical Center. "If two houses are built side by side, one with a level foundation and the other with uneven foundation, they'll look identical at first," he says. "As time goes by, the house on the uneven foundation will start to get some cracks and warping. Eventually the doors may not close properly." Yikes.<br><br>
+					</p>
+					
+					<h5><b>How Heels Can Affect Your Body</b></h5>
+					<img src="images/body_illustration.gif" alt = "high heels - illustration"/> <br><br>
+					<p>
+					<ul><li>Feet<br>
+							"At the most simple level, heels don't allow your foot to function properly," Kelonsky says. Wearing heels can lead to joint disease in your foot bones, hammertoe deformities, calluses, bunions, ingrown toenails, neuroma—just about any foot issue you can imagine, he says.</li><br>
+						<li>Achilles Tendon<br>
+							Wearing high heels on a daily basis can actually shorten and stiffen the muscle-tendon unit that connects your ankle to your calf muscle. This can make it difficult to extend your legs and walk even when you don't have shoes on, says Suzanne Levine, a New York City-based podiatrist.</li><br>
+						<li>Knees<br>
+							Because wearing heels shifts your weight toward the ball of your foot, your knees have to move forward to keep you balanced, putting extra stress on them. Since your joints are improperly aligned, over time you can develop arthritis in your knees (a.k.a. osteoarthritis), which could require surgery if it gets really serious. (Studies have looked at relatively small groups of women, so the heels and knee connection needs more research.
+							However the podiatrists we spoke with agreed that your knees do move out of line to keep you from tottering over when you're wearing them.)</li></p>
+					</ul>
+					</div>
+			</div>
+		</div>
+		
+		
+		<h3>Belly Fat vs. Being Overweight in Older Women<button type="button" class="btn btn-primary toggleContent4">Learn More</button></h3>
+		
+		<div class="detailsdesc4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">By Steven Reinberg<br>HealthDay Reporter</div>
+					<div class="panel-body"><p>
+					THURSDAY, Feb. 23, 2017 (HealthDay News) -- In older women, it's not excess weight that's deadly, but where those extra pounds collect that can shorten life, a new study reports.
+					Among women 70 to 79, being overweight or obese didn't appear to cut years off life -- unless the weight was centered around the waist. But being underweight also appeared to shorten life span, researchers found.<br><br>
+					"Abdominal fat is more deadly than carrying excess weight," said lead researcher Zhao Chen. She's chair of the University of Arizona's department of epidemiology and biostatistics in the College of Public Health.
+					While the study found that a large waist circumference is detrimental, Hispanic women were somewhat protected -- they had lower mortality rates at any waist measurement or BMI level than white or black women.
+					Chen added, "An older woman should be concerned when her body weight is below normal for her height, and less concerned when she is slightly heavier than normal."<br><br>
+					The researchers found that the risk of mortality increased when waist circumference measured more than 31.5 inches (80 centimeters), and they classified anything above nearly 35 inches (88 centimeters) as an "extreme risk."
+					The study looked at weight by using body mass index (BMI) measurements. BMI is a rough estimate of a person's body fat based on height and weight measurements. A BMI of 18.5 to 24.9 is considered normal weight. Below 18.5 is underweight, while 25 to 29.9 is considered overweight.
+					Obesity is a BMI of 30 or more. But obesity can also be broken into three classes, as was done in this study. Class I or "slight" obesity is a BMI of 30 to 34.9. Class II is 35 to 39.9, and class III is a BMI of 40 or above.<br><br>
+					Although being overweight is often considered generally bad for your health, how bad may depend on your age, race and ethnic background, Chen said.
+					"Some of these differences may be related to the fact that body weight does not capture mortality risk, as do measures such as waist circumference, which we find is consistently associated with higher mortality," Chen said.<hr>
+	
+					</div>
+			</div>
+		</div>
+		
+		<h3>Permanent Birth Control: His and Her Options<button type="button" class="btn btn-primary toggleContent5">Learn More</button></h3>
+		<div class="detailsdesc5">
+			<div class="panel panel-primary">
+				<div class="panel-heading">WorkOut and Fitness Regimes</div>
+					<div class="panel-body">
+					<p>
+						Three years after they got married, Alexandra Paul and her husband, Ian, wanted better birth control. Paul was fed up with side effects of the pill, so she switched to a diaphragm. But when contraceptive jelly gave her infections, she avoided using it. That put a crimp in their lovemaking. "Not having birth control in every night limited our spontaneity," she says.<br><br>
+						They knew they didn't want kids, so they decided to go for a permanent type of birth control -- sterilization. But for whom -- him or her? Ian appreciated how Alexandra had always taken care of birth control, and he felt like it was his turn. So he had a vasectomy.
+						Years later, the Los Angeles couple couldn't be happier. "We have never regretted our decision," Paul says. "Sex anywhere, anytime, without worry about pregnancy. And no more birth control chemicals."<br><br>
+						If you're sure you don't want kids, or you have children but don't want more, permanent birth control may be for you. Your doctor can help you explore the options. Learn as much as you can about how it's done and what to expect so you can make your decision with confidence.</p>
+						<h5><b>For Him: Vasectomy</b></h5>
+						This method blocks sperm from moving into your semen. Many couples choose it because it works. Vasectomies have a 99% success rate in preventing pregnancy.<br>
+						It's also simple and safe. You can do it in a doctor's office and it only takes 15-30 minutes. The risks, like infection and bleeding, are low.
+						<h5><b>What to Expect</b></h5>
+						First, a doctor numbs your scrotum with a local anesthetic so you won't feel any pain. He makes a small opening in your skin, and then blocks or removes a tube called the vas deferens, which keeps sperm from getting into your semen. Without sperm, there's no way your partner will get pregnant. "Snip, tie, done," Paul says.
+						Recovery is quick. You may not need stitches, but if you do, they'll dissolve on their own. You may have discomfort or swelling for a few days. Icing the area can help. You'll probably be back at work and your usual routine in 2 days.
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<h3>Better Sleep, Less Stress<button type="button" class="btn btn-primary toggleContent6">Learn More</button></h3>
+		<div class="detailsdesc6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">WorkOut and Fitness Regimes</div>
+					<div class="panel-body">
+					<p>
+					An underactive thyroid, also known as hypothyroidism, can make you feel lousy. But there’s plenty you can do to feel better and take away a lot of the stress that comes with the condition.
+					Your day-to-day habits can make a big difference. That means more than just taking your medicine as prescribed.
+					“Lifestyle measures can improve the way your immune system functions. And that can help ease the symptoms of hypothyroidism,” says Betul Hatipoglu, MD, an endocrinologist at the Cleveland Clinic in Ohio.
+					Take these simple, everyday steps to start feeling more like yourself.<br><br>
+					
+					<b>Get Smart About Sleep</b><br>
+					
+					You might feel run down, even if you’re taking medication. Yet all too often, “people with hypothyroidism don’t get enough sleep, or the sleep they’re getting isn’t good quality,” Hatipoglu says.
+					To ensure your body has a chance to rest and recover<br><br>
+					
+					<b>Aim for 8 hours of sleep every night.</b><br>
+
+					That’s actual sleep, not just time spent in bed. Hit the hay and wake up at roughly the same times most days.<br>
+					“A regular sleep schedule makes it easier to fall and stay asleep,” says Shelby Harris, PsyD, director of the behavioral sleep medicine program at Montefiore Medical Center in NewYork.<br><br>
+					
+					<b>Your bedroom should be dark, quiet, and cool.</b><br>
+
+					Keep pets out of your bed, and if possible, out of your room. That way, they won’t disrupt your sleep.<br><br>
+					
+					<b>index a wind-down routine.</b><br>
+					At least 30 minutes before bed, do something relaxing. Harris suggests a cup of herbal tea, a shower, or reading in a low-lit room.<br><br>
+					
+					<b>If all else fails, talk with your doctor.</b><br>
+					If you snore, can’t fall or stay asleep, or are worn out even if you do get 8 hours of shut-eye, you may have a sleep disorder. Your doctor might send you to a sleep specialist.<br><br>
+					
+					<b>Look for Ways to Relax</b><br>
+					“Stress has a negative impact on the immune system. So if you’re really stressed, it can make the symptoms of hypothyroidism worse,” Hatipoglu says.<br>
+					Even if your hypothyroidism is well controlled, high stress causes your body to release adrenaline and cortisol. Those can make you feel anxious and “fried.”<br>
+					</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+
+<!-----------------------------FOOTER SECTION BELOW---------------------->	
+	
+	<div class="container-fluid footer">
+		<div class="container">
+			
+			
+			<div class="col-sm-6">
+				<img src="./images/title.png" class="img-responsive">
+				<p>Providing the best healthcare solutions to people.<br>Your well being is our moto and success</p>
+				
+				<!--<a href="" class="social-icons"><i class="fa fa-facebook"></i></a>-->
+				
+				
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">&raquo;Home</a></li>
+						<li><a href="index.html#aboutus">&raquo;About Us</a></li>
+						<li><a href="FindStores.html">&raquo;Medical Centers</a></li>
+						<li><a href="FindMedicine.html">&raquo;Medicines</a></li>
+						<li><a href="FindDoctor.html">&raquo;Doctors</a></li>
+						
+						
+					</ul>
+			
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Contact Us</h3>
+					<p><strong>Headquarters:</strong>225 Huntington Avenue<br>Boston MA-02120</p>
+					<p><strong>Email Us At:</strong>care@livesmart.com</p>
+					<p><strong>Phone: </strong>+1 (800)-800-0000</p>
+					<p><strong>Fax: </strong>+1 (750)-888-9900</p>
+			
+			</div>
+			
+		</div>
+		<div class="text-center"><br><br>
+			<p><i>Copyright &copy; 2017 LiveSmart Inc.<br>
+			<a href="mailto:admin@livesmart.com">care@livesmart.com</a></i></p>
+		</div>
+	
+	</div>
+			
+			
+			
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html> 

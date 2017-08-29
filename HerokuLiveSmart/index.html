@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <title>Home Page</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="./images/favicon.ico">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <!--<link rel="stylesheet" href="mycssfile.css">-->
+	  <script type="text/javascript" language="javascript">
+	  var modal = document.getElementById('id01');
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	  </script>
+	  <style>
+		body{
+			padding-top:40px;
+			background: url("./images/bg.png");
+		}
+		.dropdown-menu{
+			background-color:#D3D3D3;
+		}
+		
+		/*.navbar-inverse .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+			background-color: #6495ED;
+			color: #000000;
+		}*/
+		
+		.btn{
+			margin-left:10px;
+		}
+		.carousel-inner .item img {
+  			width:100%;
+  max-height: 500px !important;
+			/*height:450px;*/
+		}
+		.carousel-caption{
+			font-weight:bold;
+			font-style:italic;
+		}
+		
+		.jumbotron{
+			/*background-color:#E0FFFF;*/
+			background: url("./images/jumbo9.jpg");
+			color:#fff;
+			font-weight:bold;
+			font-size:16px;
+		}
+
+		.line{
+		font-family: 'Tangerine', serif;
+		font-size: 18px;
+		line-height: 150%;
+		}
+		
+		.jumbotron.achievements{
+			padding-top:5px;
+			padding-bottom:10px;
+			font-weight:normal;
+			color:#000000;
+		}
+		
+		.jumbotron.achievements h3, .jumbotron.achievements small{
+			color:#fff;
+			font-weight:bold;
+		}
+		
+		#service blockquote{
+			background: url("./images/test.jpg");
+			background-color:#E0FFFF;
+			font-size:18px;
+			font-weight:bold;
+			color:#fff;
+		
+		}
+		
+		#service blockquote small{
+			padding-top:15px;
+			color:#fff;
+		
+		}
+		
+		
+		
+		.footer{
+			background-color:#333333;
+			padding:20px,0;
+			color:#fff;
+			padding-bottom:20px;
+		
+		}
+		.footer img{
+			padding-top:20px;
+		}
+		.footer ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.footer ul li a{
+			color:#fff;
+			font-size:15px
+		}
+
+		<!-- Sign Up css start		-->
+.modal-dialog {
+	margin: 5% auto 15% auto;
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+	margin-left : -10px;
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    color: #fff;
+    background: #3276B1;
+}		
+		<!-- sign up css end -->
+		<!-- register form css -->
+		
+#registerForm .form-group .input-group .form-control {
+	margin : 300px;
+}
+
+#fullName, #uName, #uPword, #address, #specialization {
+	width : 560px;
+	margin-left:5px;
+	
+}
+	
+	<!-- Register Form css -->
+	  </style>
+	  
+</head>
+
+
+<body>
+
+<!-----------------------------NAVBAR SECTION BELOW---------------------->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class = "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">LiveSmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			<button class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal1">Register Doctor</button>
+			<button class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">Doctor Sign In</button>
+			<!-- <a href="" class="btn btn-info navbar-btn navbar-right">Create Account</a>
+			<a href="" class="btn btn-info navbar-btn navbar-right">Sign In</a> -->
+			
+				<ul class="nav navbar-nav">
+								<!--<li><a href="#">Home</a></li>-->
+								<ul class="nav navbar-nav">
+								<li><a href="#aboutus">About Us</a>
+								<li><a href="#services">Services</a>
+								<li><a href="#achievements">Achievements</a>
+								<li><a href="feedback.html">Feedback</a>
+								</ul>
+					
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Doctors
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindDoctor.html">Find A Doctor</a></li>
+								<li><form action="requestappt.php" method=post><button type="submit" class="btn">Book Appointments</button></a></form></li>
+								
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Chemists
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="FindStores.html">Find Stores</a></li>
+								<li><a href="FindMedicine.html">Medicines</a></li>
+							</ul>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			
+
+		</div>
+	</nav>
+	
+	<!-- sign up modal	-->
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Doctor Log in</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body">
+				<form role="form" action="login.php" method=post>
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Login" name="username" required>
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password" name="password" required>
+							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+	
+				<div class="modal-footer">
+					<button class="form-control btn btn-primary">Login</button>
+				</div>
+				</form>
+
+			</div> <!-- /.modal-body -->
+ 
+			<!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+<!-- create account modal start -->
+
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Register</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body" id="registerForm">
+				<form role="form"  action="register.php" method=post>
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="fullName" name="fullname" placeholder="Full Name" required>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uName" name ="username"placeholder="User Name" required>
+	
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPword" name="password" placeholder="Password" required>
+							
+						</div> <!-- /.input-group -->
+					</div>
+					
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+						</div> <!-- /.input-group -->
+					</div>
+					
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="specialization" name = "specialization" placeholder="Specialization" required>
+						</div> <!-- /.input-group -->
+					</div>
+					<div class="modal-footer">
+						<button class="form-control btn btn-primary">Register</button>
+					</div>
+				</form>
+
+			</div> <!-- /.modal-body -->
+
+			 <!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+
+
+		
+<!-----------------------------COMPANY BANNER SECTION BELOW---------------------->	
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>LiveSmart</h1>
+			<p>Because Your Life Matters.</p>
+			<small> We provide solutions pertaining to all kinds of healthcare problems. You may look for best health practises to prevent falling to ailments.Our endeavour is to promote good health and hygiene and make society disease free to the maximum extent possible.</small><br><br>
+			<div class="btn-group">
+				<a href="ourvalues.html" class="btn btn-lg btn-info">Our Value</a>
+				<a href="healthTips.html" class="btn btn-lg btn-default">Health Tips</a>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	
+<!-----------------------------CAROUSEL SECTION BELOW---------------------->	
+	
+	<div class="container">
+			  <br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li>
+				  <li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<img src="./images/Doctors.jpg" alt="Chania" width="100%" height="360px">
+					<div class="carousel-caption">
+							<h3>Find Doctors</h3>
+							<p>Make an appointment on the go</p>
+						</div>
+				  </div>
+
+				  <div class="item">
+					<img src="./images/pharmacy.jpg" alt="Chania" width="100%" height="360px">
+					<div class="carousel-caption">
+							<h3>Pharmacy</h3>
+							<p>Find a nearby pharmacist</p>
+						</div>
+				  </div>
+				
+				  <div class="item">
+					<img src="./images/c3.jpg" alt="Flower" width="100%" height="360px">
+					<div class="carousel-caption">
+						<h3>Medicines</h3>
+						<p>Information on Medicines and Drugs</p>
+					</div>
+				  </div>
+
+				  <div class="item">
+					<img src="./images/exercise.jpg" alt="Excercise" width="100%" height="360px">
+					<div class="carousel-caption">
+							<h3>Fitness Tips</h3>
+							<p>Stay Healthy</p>
+						</div>
+				  </div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+		</div>
+	</div>
+
+<!-----------------------------ABOUT US SECTION BELOW---------------------->
+	
+	<div class="container" id ="service">
+		<section>
+			<div class="page-header" id="aboutus">
+				<h3>About Us<small> Who we are</small></h3>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="line"> 
+						Personal Health is the most primary factor which governs a person’s life. Being healthy is an attribute which every individual looks forward to. It also makes an important contribution to economic progress, as healthy populations live longer, are more productive, and save more.<br>
+						The <abbr title="World Health Organization">WHO</abbr> defines health in its broader sense as "a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.<br>
+						Our target is to build an application that provides solutions pertaining to all kinds of health issues under the same roof. A person can look for best health practises to prevent falling to ailments, a person suffering with some health issues can get in touch with doctors, look for medicines, compare medicines of different brands and find chemists’ shops all on one website.  Our endeavour is to promote good health and hygiene and make society disease free to the maximum possible extent.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	
+<!-----------------------------OUR SERVICE DETAILS SECTION BELOW---------------------->
+	
+	<div class="container" id ="service">
+		<section>
+			<div class="page-header" id="services">
+				<h3>Our Service <small>We Take Your Medical Complications In Our Hands</small></h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				
+					<blockquote>
+						<h4>Medical Centers and Doctors</h4>
+						<img src="./images/check.jpg" alt="service image" width="100%" height="230px">
+						<small>We assist you to get the best medical and doctor service. We find out the hospitals which will help you get treated and cured in the most efficient way possible. The solution would also be cost effective.</small>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4>Chemists and Medicines</h4>
+						<img src="./images/chemist.jpg" alt="service image" width="100%" height="230px">
+						<small>We have answers to where can you find the prescribed medicines in your area. We find out chemists shops for you. We also give you an analysis on medicines brands with same compositions.</small>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<h4>Healthy and Hygienic Lifestyle</h4>
+						<img src="./images/health.png" alt="service image" width="100%" height="230px">
+						<small>Prevention is better than cure. So why not opt for a healthy and hygienic lifestyle and make ourselves lesser prone to diseases and health issues. On our website we have all such informations on offer.</small>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	
+	
+	<!-----------------------------ACHIEVEMENTS SECTION BELOW---------------------->
+	
+	<div class="container">
+		<div class="jumbotron achievements">
+		
+			<div class="page-header" id= "achievements">
+				<h3>Our Achievements: <small>We have outperformed Our Competitors through our Customer Centric high quality solutions</small></h3>
+			</div>
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Awarded The Best Healthcare Service Provider in United States in 2016</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>LiveSmart Awarded The Best Healthcare Service Provider in United States in 2016. We outperformed 150 competitors with the precision and high qulaity of our service. We believe in being customer centric and our success depends on your well being</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best1.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Makes It To Fortune 500 List</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>We are now a Fortune 500 company. It is only possible because of the trust our customers have bestowed on us. We take this opportunity to thank our customers for choosing us. We promise to move ahead with dedication and striving continuous upliftments in our servcies.</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best2.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h4>LiveSmart Awarded The Best Company In Terms Of Customer Satisfaction</h4>
+				</div>
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<i>We are awarded the best company in terms of customer satisfaction. Our customers' well being and good health have been our top-most priority since the time we set forth on this mission of serving the society and our results reflect our quality of servcie and our motto.</i>
+							
+								</div>
+								<div class="col-md-4">
+									<img src="./images/best3.jpg" alt="service image" width="100%" height="160px">
+								</div>
+							</div>
+
+					</div>
+			</div>
+
+		</div>
+	
+	</div>
+	
+
+	<!-----------------------------Feedback SECTION BELOW---------------------->
+
+	 <!-- container ends here -->
+
+	
+	<!-- MEDIA OBJECTS FOR IN THE NEWS-->
+<!--<div class="container">
+		<div class="page-header" id="feedback">
+			<h3>Live Smart: <small>In The News</small></h3>
+		</div>
+		<div class="media">
+			<div class="media-left media-top">
+					<img src="title.png" class="media-object" style="width:60px">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">Media Top</h4>
+				<p>The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain.The best service provider in healthcare domain</p>
+			</div>
+		</div>
+	<div>-->
+	
+	
+<!-----------------------------FOOTER SECTION BELOW---------------------->	
+	
+	<div class="container-fluid footer">
+		<div class="container">
+			
+			
+			<div class="col-sm-6">
+				<img src="./images/title.png" class="img-responsive">
+				<p>Providing the best healthcare solutions to people.<br>Your well being is our moto and success</p>
+				
+				<!--<a href="" class="social-icons"><i class="fa fa-facebook"></i></a>-->
+				
+				
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">&raquo;Home</a></li>
+						<li><a href="index.html#aboutus">&raquo;About Us</a></li>
+						<li><a href="FindStores.html">&raquo;Medical Centers</a></li>
+						<li><a href="FindMedicine.html">&raquo;Medicines</a></li>
+						<li><a href="FindDoctor.html">&raquo;Doctors</a></li>
+						
+						
+					</ul>
+			
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Contact Us</h3>
+					<p><strong>Headquarters:</strong>225 Huntington Avenue<br>Boston MA-02120</p>
+					<p><strong>Email Us At:</strong>care@livesmart.com</p>
+					<p><strong>Phone: </strong>+1 (800)-800-0000</p>
+					<p><strong>Fax: </strong>+1 (750)-888-9900</p>
+			
+			</div>
+			
+		</div>
+		<div class="text-center"><br><br>
+			<p><i>Copyright &copy; 2017 LiveSmart Inc.<br>
+			<a href="mailto:admin@livesmart.com">care@livesmart.com</a></i></p>
+		</div>
+	
+	</div>
+			
+			
+			
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
